@@ -42,10 +42,10 @@ http_archive(
 
 http_archive(
     name = "googleapis",
-    sha256 = "3d3e0f6f555134dd65b2b81eb540b612bbe6523b14eebccafc6509065c3f38ea",
-    strip_prefix = "googleapis-48425468bf04227287f1546b333e778aa0fd2050",
+    sha256 = "22a39b9fcf43638f4e0c5122635bea048b843ccbb87048d27457d287aff346f1",
+    strip_prefix = "googleapis-1804a603281707a1f0e6fff27851cae115ac3c8b",
     urls = [
-        "https://github.com/googleapis/googleapis/archive/48425468bf04227287f1546b333e778aa0fd2050.zip",
+        "https://github.com/googleapis/googleapis/archive/1804a603281707a1f0e6fff27851cae115ac3c8b.zip",
     ],
 )
 
@@ -87,10 +87,10 @@ rules_proto_toolchains()
 
 http_archive(
     name = "io_bazel_rules_go",
-    sha256 = "130739704540caa14e77c54810b9f01d6d9ae897d53eedceb40fd6b75efc3c23",
+    sha256 = "c6cf9da6668ac84c470c43cbfccb8fdc844ead2b5a8b918e2816d44f2986f644",
     urls = [
-        "https://mirror.bazel.build/github.com/bazelbuild/rules_go/releases/download/v0.54.1/rules_go-v0.54.1.zip",
-        "https://github.com/bazelbuild/rules_go/releases/download/v0.54.1/rules_go-v0.54.1.zip",
+        "https://mirror.bazel.build/github.com/bazelbuild/rules_go/releases/download/v0.55.0/rules_go-v0.55.0.zip",
+        "https://github.com/bazelbuild/rules_go/releases/download/v0.55.0/rules_go-v0.55.0.zip",
     ],
 )
 
