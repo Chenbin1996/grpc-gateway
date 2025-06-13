@@ -42,10 +42,10 @@ http_archive(
 
 http_archive(
     name = "googleapis",
-    sha256 = "3d3e0f6f555134dd65b2b81eb540b612bbe6523b14eebccafc6509065c3f38ea",
-    strip_prefix = "googleapis-48425468bf04227287f1546b333e778aa0fd2050",
+    sha256 = "7460b5d93d9769933d867d40cbc892f9c87ee04e928c0c491af36f93e860e853",
+    strip_prefix = "googleapis-3a45aa38968f4fe537cd3837c0e95af8c189b11b",
     urls = [
-        "https://github.com/googleapis/googleapis/archive/48425468bf04227287f1546b333e778aa0fd2050.zip",
+        "https://github.com/googleapis/googleapis/archive/3a45aa38968f4fe537cd3837c0e95af8c189b11b.zip",
     ],
 )
 
@@ -87,10 +87,10 @@ rules_proto_toolchains()
 
 http_archive(
     name = "io_bazel_rules_go",
-    sha256 = "130739704540caa14e77c54810b9f01d6d9ae897d53eedceb40fd6b75efc3c23",
+    sha256 = "c6cf9da6668ac84c470c43cbfccb8fdc844ead2b5a8b918e2816d44f2986f644",
     urls = [
-        "https://mirror.bazel.build/github.com/bazelbuild/rules_go/releases/download/v0.54.1/rules_go-v0.54.1.zip",
-        "https://github.com/bazelbuild/rules_go/releases/download/v0.54.1/rules_go-v0.54.1.zip",
+        "https://mirror.bazel.build/github.com/bazelbuild/rules_go/releases/download/v0.55.0/rules_go-v0.55.0.zip",
+        "https://github.com/bazelbuild/rules_go/releases/download/v0.55.0/rules_go-v0.55.0.zip",
     ],
 )
 
@@ -128,9 +128,9 @@ protobuf_deps()
 
 http_archive(
     name = "rules_shell",
-    sha256 = "bc61ef94facc78e20a645726f64756e5e285a045037c7a61f65af2941f4c25e1",
-    strip_prefix = "rules_shell-0.4.1",
-    url = "https://github.com/bazelbuild/rules_shell/releases/download/v0.4.1/rules_shell-v0.4.1.tar.gz",
+    sha256 = "b15cc2e698a3c553d773ff4af35eb4b3ce2983c319163707dddd9e70faaa062d",
+    strip_prefix = "rules_shell-0.5.0",
+    url = "https://github.com/bazelbuild/rules_shell/releases/download/v0.5.0/rules_shell-v0.5.0.tar.gz",
 )
 
 load("@rules_shell//shell:repositories.bzl", "rules_shell_dependencies", "rules_shell_toolchains")
@@ -141,9 +141,9 @@ rules_shell_toolchains()
 
 http_archive(
     name = "com_github_bazelbuild_buildtools",
-    sha256 = "444a9e93e77a45f290a96cc09f42681d3c780cfbf4ac9dbf2939b095daeb6d7d",
-    strip_prefix = "buildtools-8.2.0",
-    urls = ["https://github.com/bazelbuild/buildtools/archive/v8.2.0.tar.gz"],
+    sha256 = "53119397bbce1cd7e4c590e117dcda343c2086199de62932106c80733526c261",
+    strip_prefix = "buildtools-8.2.1",
+    urls = ["https://github.com/bazelbuild/buildtools/archive/v8.2.1.tar.gz"],
 )
 
 load("@com_github_bazelbuild_buildtools//buildifier:deps.bzl", "buildifier_dependencies")
