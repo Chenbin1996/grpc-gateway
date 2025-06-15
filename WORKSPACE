@@ -42,10 +42,10 @@ http_archive(
 
 http_archive(
     name = "googleapis",
-    sha256 = "3d3e0f6f555134dd65b2b81eb540b612bbe6523b14eebccafc6509065c3f38ea",
-    strip_prefix = "googleapis-48425468bf04227287f1546b333e778aa0fd2050",
+    sha256 = "1cedaa3c79d16ab21ab6ade11238f66c9d555c8fb344be9c488d9c2646ed5973",
+    strip_prefix = "googleapis-c61890928ac3737f390f2b1f8e2ee5c6b00f8c46",
     urls = [
-        "https://github.com/googleapis/googleapis/archive/48425468bf04227287f1546b333e778aa0fd2050.zip",
+        "https://github.com/googleapis/googleapis/archive/c61890928ac3737f390f2b1f8e2ee5c6b00f8c46.zip",
     ],
 )
 
@@ -87,10 +87,10 @@ rules_proto_toolchains()
 
 http_archive(
     name = "io_bazel_rules_go",
-    sha256 = "130739704540caa14e77c54810b9f01d6d9ae897d53eedceb40fd6b75efc3c23",
+    sha256 = "9d72f7b8904128afb98d46bbef82ad7223ec9ff3718d419afb355fddd9f9484a",
     urls = [
-        "https://mirror.bazel.build/github.com/bazelbuild/rules_go/releases/download/v0.54.1/rules_go-v0.54.1.zip",
-        "https://github.com/bazelbuild/rules_go/releases/download/v0.54.1/rules_go-v0.54.1.zip",
+        "https://mirror.bazel.build/github.com/bazelbuild/rules_go/releases/download/v0.55.1/rules_go-v0.55.1.zip",
+        "https://github.com/bazelbuild/rules_go/releases/download/v0.55.1/rules_go-v0.55.1.zip",
     ],
 )
 
@@ -102,10 +102,10 @@ go_register_toolchains(version = "1.24.0")
 
 http_archive(
     name = "bazel_gazelle",
-    sha256 = "7c40b746387cd0c9a4d5bb0b2035abd134b3f7511015710a5ee5e07591008dde",
+    sha256 = "49b14c691ceec841f445f8642d28336e99457d1db162092fd5082351ea302f1d",
     urls = [
-        "https://mirror.bazel.build/github.com/bazelbuild/bazel-gazelle/releases/download/v0.43.0/bazel-gazelle-v0.43.0.tar.gz",
-        "https://github.com/bazelbuild/bazel-gazelle/releases/download/v0.43.0/bazel-gazelle-v0.43.0.tar.gz",
+        "https://mirror.bazel.build/github.com/bazelbuild/bazel-gazelle/releases/download/v0.44.0/bazel-gazelle-v0.44.0.tar.gz",
+        "https://github.com/bazelbuild/bazel-gazelle/releases/download/v0.44.0/bazel-gazelle-v0.44.0.tar.gz",
     ],
 )
 
@@ -128,9 +128,9 @@ protobuf_deps()
 
 http_archive(
     name = "rules_shell",
-    sha256 = "bc61ef94facc78e20a645726f64756e5e285a045037c7a61f65af2941f4c25e1",
-    strip_prefix = "rules_shell-0.4.1",
-    url = "https://github.com/bazelbuild/rules_shell/releases/download/v0.4.1/rules_shell-v0.4.1.tar.gz",
+    sha256 = "b15cc2e698a3c553d773ff4af35eb4b3ce2983c319163707dddd9e70faaa062d",
+    strip_prefix = "rules_shell-0.5.0",
+    url = "https://github.com/bazelbuild/rules_shell/releases/download/v0.5.0/rules_shell-v0.5.0.tar.gz",
 )
 
 load("@rules_shell//shell:repositories.bzl", "rules_shell_dependencies", "rules_shell_toolchains")
@@ -141,9 +141,9 @@ rules_shell_toolchains()
 
 http_archive(
     name = "com_github_bazelbuild_buildtools",
-    sha256 = "444a9e93e77a45f290a96cc09f42681d3c780cfbf4ac9dbf2939b095daeb6d7d",
-    strip_prefix = "buildtools-8.2.0",
-    urls = ["https://github.com/bazelbuild/buildtools/archive/v8.2.0.tar.gz"],
+    sha256 = "53119397bbce1cd7e4c590e117dcda343c2086199de62932106c80733526c261",
+    strip_prefix = "buildtools-8.2.1",
+    urls = ["https://github.com/bazelbuild/buildtools/archive/v8.2.1.tar.gz"],
 )
 
 load("@com_github_bazelbuild_buildtools//buildifier:deps.bzl", "buildifier_dependencies")
