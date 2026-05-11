@@ -3,6 +3,7 @@ load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
 go_library(
     name = "genopenapi",
     srcs = [
+        "annotations.go",
         "comments.go",
         "doc.go",
         "generator.go",
@@ -18,6 +19,7 @@ go_library(
     visibility = ["//protoc-gen-openapiv3:__subpackages__"],
     deps = [
         "//internal/descriptor",
+        "//protoc-gen-openapiv3/options",
         "@org_golang_google_genproto_googleapis_api//annotations",
         "@org_golang_google_genproto_googleapis_api//visibility",
         "@org_golang_google_grpc//grpclog",

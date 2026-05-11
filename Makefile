@@ -77,9 +77,11 @@ proto:
 	rm ./examples/internal/proto/examplepb/generated_input.pb.go
 	rm ./examples/internal/proto/examplepb/generated_input_grpc.pb.go
 	rm ./examples/internal/proto/examplepb/generated_input.pb.gw.go
-	# Remove swagger files for openapiv2 definitions, they're unused
+	# Remove swagger files for openapiv2 and openapiv3 definitions, they're unused
 	rm ./protoc-gen-openapiv2/options/annotations.swagger.json
 	rm ./protoc-gen-openapiv2/options/openapiv2.swagger.json
+	rm ./protoc-gen-openapiv3/options/annotations.swagger.json
+	rm ./protoc-gen-openapiv3/options/openapiv3.swagger.json
 	buf generate \
 		--template ./examples/internal/proto/examplepb/openapi_merge.buf.gen.yaml \
 		--path ./examples/internal/proto/examplepb/openapi_merge_a.proto \
@@ -133,6 +135,10 @@ proto:
 		--template ./protoc-gen-openapiv2/options/buf.gen.yaml \
 		--path ./protoc-gen-openapiv2/options/annotations.proto \
 		--path ./protoc-gen-openapiv2/options/openapiv2.proto
+	buf generate \
+		--template ./protoc-gen-openapiv3/options/buf.gen.yaml \
+		--path ./protoc-gen-openapiv3/options/annotations.proto \
+		--path ./protoc-gen-openapiv3/options/openapiv3.proto
 	buf generate \
 		--template ./examples/internal/proto/examplepb/opaque.buf.gen.yaml \
 		--path examples/internal/proto/examplepb/opaque.proto
